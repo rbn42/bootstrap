@@ -1,0 +1,10 @@
+*.swp
+*.swo
+*.bak
+*.log
+*.pyc
+ctags
+.tags
+build
+.project
+.pydevproject
