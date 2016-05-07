@@ -14,10 +14,7 @@ cd ~/git/chroot_script
 bash step4.sh
 
 visudo #uncomment /wheel
-export u=
-useradd -m -g users -G wheel -s /bin/bash $u
-passwd $u
-su $u
+bash adduser.sh #username
 
 #备用grub
 sudo su
