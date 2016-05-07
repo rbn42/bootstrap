@@ -13,17 +13,15 @@ arch-chroot /mnt
 cd ~/git/chroot_script
 bash step4.sh
 
-
-#备用grub
-sudo su
-cat /home/iso/grub.cfg >> /tmp/root.x86_64/mnt/boot/grub/grub.cfg
-
 visudo #uncomment /wheel
 export u=
 useradd -m -g users -G wheel -s /bin/bash $u
 passwd $u
 su $u
 
+#备用grub
+sudo su
+cat /home/iso/grub.cfg >> /tmp/root.x86_64/mnt/boot/grub/grub.cfg
 
 #重启后再做一下步骤,不然会受内核影响?
 #安装kde
