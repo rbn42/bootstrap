@@ -1,15 +1,14 @@
-echo arch > /etc/hostname
-echo 127.0.0.1     arch >> /etc/hostname
-ln -s /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
-mkinitcpio -p linux
-echo en_US.UTF-8 UTF-8   >> /etc/locale.gen 
-echo zh_CN.UTF-8 UTF-8   >> /etc/locale.gen 
-locale-gen
 
-pacman -S  grub
-pacman -S dialog
-grub-install  /dev/sda
-grub-mkconfig -o /boot/grub/grub.cfg
+pacman-key --init
+pacman-key --populate archlinux
+#chroot内部没有编辑器
+#step0
+#sudo vim /tmp/root.x86_64/etc/pacman.d/mirrorlist
+echo Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch >>  /etc/pacman.d/mirrorlist
+pacman -Syyu
 
-pacman -S sudo
-pacman -S wpa_supplicant
+mount /dev/sda7 /mnt
+pacstrap /mnt base
+genfstab -p /mnt >> /mnt/etc/fstab
+cp ~/git/chroot_script  /mnt/root -r
+

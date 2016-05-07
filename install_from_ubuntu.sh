@@ -1,44 +1,17 @@
-###chroot 到安装环境
-cd /media/$USER/arch/
-cd /tmp
-wget https://mirrors.kernel.org/archlinux/iso/2016.05.01/archlinux-bootstrap-2016.05.01-x86_64.tar.gz
-
+#step1
+cd ~/git/chroot_script
 sudo su
-
-tar xf arch*.tar.gz
-mount --bind /tmp/root.x86_64 /tmp/root.x86_64
-cd /tmp/root.x86_64
-cp /etc/resolv.conf etc
-mount -t proc /proc proc
-mount --rbind /sys sys
-mount --rbind /dev dev
-mount --rbind /run run    # (assuming /run exists on the system)
+bash step1.sh
 chroot /tmp/root.x86_64 /bin/bash
 
-pacman-key --init
-pacman-key --populate archlinux
-
-#chroot内部没有编辑器
-sudo vim /tmp/root.x86_64/etc/pacman.d/mirrorlist
-pacman -Syyu
-pacman -S git
-mkdir ~/git
-cd ~/git
-git clone https://github.com/rbn42/chroot_script.git
-cd ~/git/chroot_script
-git checkout arch201605
-#step1
-bash step1.sh
-
-pacman -Syyu
-pacman -S git
-mkdir ~/git
-cd ~/git
-git clone https://github.com/rbn42/chroot_script.git
-cd ~/git/chroot_script
-git checkout arch201605
 #step2
+cd ~/git/chroot_script
 bash step2.sh
+arch-chroot /mnt
+
+#step4
+cd ~/git/chroot_script
+bash step4.sh
 
 
 #备用grub
