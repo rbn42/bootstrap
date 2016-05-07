@@ -1,3 +1,5 @@
+echo arch > /etc/hostname
+echo 127.0.0.1     arch >> /etc/hostname
 ln -s /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 mkinitcpio -p linux
 echo en_US.UTF-8 UTF-8   >> /etc/locale.gen 
