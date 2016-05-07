@@ -16,10 +16,14 @@ bash step4.sh
 visudo #uncomment /wheel
 bash adduser.sh #username
 
+passwd root # set random passwd, disable root
+
 #备用grub
 sudo su
 cat /home/iso/grub.cfg >> /tmp/root.x86_64/mnt/boot/grub/grub.cfg
 
+
+######################for kde only
 #重启后再做一下步骤,不然会受内核影响?
 #安装kde
 pacman -S  plasma-desktop 

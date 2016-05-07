@@ -22,3 +22,9 @@ pacman -S fvwm
 pacman -S libx264
 pacman -S ttf-ubuntu-font-family ttf-freefont
 pacman -S gvim firefox  vlc  thunderbird wmctrl xdotool   
+
+#############################for fvwm
+pacman -S xorg sddm fvwm
+systemctl enable sddm
+
+
