@@ -8,8 +8,9 @@ locale-gen
 
 pacman -S  grub
 pacman -S dialog
-grub-install  /dev/sda
-grub-mkconfig -o /boot/grub/grub.cfg
+#grub可以暫時不用裝，在宿主系統中mkconfig更新一下就可以啓動系統了
+#grub-install  /dev/sda
+#grub-mkconfig -o /boot/grub/grub.cfg
 
 pacman -S sudo
 pacman -S wpa_supplicant
