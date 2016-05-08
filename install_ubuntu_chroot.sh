@@ -7,9 +7,9 @@ gparted
 export TARGET_DISK="/dev/sda6"
 mkdir /mnt/installer
 mount $TARGET_DISK /mnt/installer
-#下载ubuntu 16.04 系统
-debootstrap xenial /mnt/installer
-#chroot到16.04系统
+#下载ubuntu 14.04 系统
+debootstrap trusty /mnt/installer
+#chroot到14.04系统
 mount --bind /dev /mnt/installer/dev
 mount --bind /dev/pts /mnt/installer/dev/pts
 mount -t proc proc /mnt/installer/proc
