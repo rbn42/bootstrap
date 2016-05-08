@@ -27,5 +27,4 @@ pacman -S gvim firefox  vlc  thunderbird wmctrl xdotool
 #############################for fvwm
 pacman -S xorg sddm fvwm
 systemctl enable sddm
-
-
+ln -s /opt/cuda/  /usr/local/cuda-7.5       
