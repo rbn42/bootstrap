@@ -5,11 +5,14 @@
 cp /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 echo 'LANG="en_NZ.UTF-8"' > /etc/default/locale 
 echo 'LANGUAGE="en_NZ:en"' >>  /etc/default/locale
-echo 'zh_CN.UTF-8 UTF-8' >>  /etc/locale.gen
-echo 'en_US.UTF-8 UTF-8' >>  /etc/locale.gen
-echo 'en_NZ.UTF-8 UTF-8' >>  /etc/locale.gen
+locale-gen zh_CN.UTF-8
+locale-gen en_US.UTF-8
+locale-gen en_NZ.UTF-8
+#echo 'zh_CN.UTF-8 UTF-8' >>  /etc/locale.gen
+#echo 'en_US.UTF-8 UTF-8' >>  /etc/locale.gen
+#echo 'en_NZ.UTF-8 UTF-8' >>  /etc/locale.gen
 echo 'Pacific/Auckland' > /etc/timezone
-locale-gen 
+#locale-gen 
 dpkg-reconfigure -f non-interactive tzdata
 #添加32位架构支持
 sudo dpkg --add-architecture i386
