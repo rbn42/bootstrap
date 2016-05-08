@@ -47,5 +47,8 @@ sudo apt-get install libopenblas-base libatlas3-base -y
 sudo apt-get install gcc gfortran python-dev libblas-dev liblapack-dev cython -y
 #sudo apt remove python-scipy
 #sudo pip2 install scipy -U
+sudo apt install ctags -y
+sudo apt install python-autopep8 -y
 
 ldconfig /usr/local/cuda-7.5/lib64 
+
