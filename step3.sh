@@ -27,3 +27,11 @@ sudo apt install python-docopt -y
 sudo apt install python-pyquery -y
 
 sudo apt install ipython -y
+sudo apt install unity-tweak-tool
+
+#compiz wallpaper
+sudo apt-get install -y compiz-plugins-extra compizconfig-settings-manager
+sudo apt-get install -y python-pil python-numpy python-scipy 
+sudo apt install dconf-editor -y
+
+sudo apt install hsetroot feh -y
