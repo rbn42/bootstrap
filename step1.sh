@@ -15,7 +15,4 @@ mount -t sysfs sys /mnt/installer/sys
 #否则的话上网找一份吧
 cat sources.list > /mnt/installer/etc/apt/sources.list
 
-cd /mnt/installer/root
-git clone https://github.com/rbn42/chroot_script.git
-cd chroot_script
-git checkout ubuntu1404
+cp *.sh   /mnt/installer/root

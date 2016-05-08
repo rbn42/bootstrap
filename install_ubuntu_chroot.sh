@@ -1,12 +1,13 @@
 #安装工具
+#這東西在arch下面弄有很大問題，可能最好用ubuntu來處理
 sudo apt-get install debootstrap
-#格式化一个分区,挂载到/mnt/installer
-gparted
 cd ~/git/chroot_script
 sudo su
+#格式化一个分区,挂载到/mnt/installer
+gparted
 bash step1.sh
 chroot /mnt/installer /bin/bash
-cd ~/chroot_script
+cd 
 bash step2.sh
 #安装grub，有跳提示的时候，可以什么都不选，略过
 apt-get install grub-pc -y 
