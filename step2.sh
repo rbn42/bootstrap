@@ -5,6 +5,7 @@
 cp /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 echo 'LANG="en_NZ.UTF-8"' > /etc/default/locale 
 echo 'LANGUAGE="en_NZ:en"' >>  /etc/default/locale
+echo 'LC_ALL=en_NZ.UTF-8' >>  /etc/default/locale
 locale-gen zh_CN.UTF-8
 locale-gen en_US.UTF-8
 locale-gen en_NZ.UTF-8
