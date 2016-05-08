@@ -48,4 +48,4 @@ sudo apt-get install gcc gfortran python-dev libblas-dev liblapack-dev cython -y
 #sudo apt remove python-scipy
 #sudo pip2 install scipy -U
 
-
+ldconfig /usr/local/cuda-7.5/lib64 
