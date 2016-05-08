@@ -1,7 +1,8 @@
 #以下全程root操作
-export TARGET_DISK="/dev/sda6"
+#export TARGET_DISK="/dev/sda6"
 mkdir /mnt/installer
-mount $TARGET_DISK /mnt/installer
+mkfs.ext4 $1
+mount $1 /mnt/installer
 #下载ubuntu 14.04 系统
 debootstrap trusty /mnt/installer http://archive.ubuntu.com/ubuntu
 #chroot到14.04系统

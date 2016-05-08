@@ -4,8 +4,8 @@ sudo apt-get install debootstrap
 cd ~/git/chroot_script
 sudo su
 #格式化一个分区,挂载到/mnt/installer
-gparted
-bash step1.sh
+#gparted
+bash step1.sh /dev/sda6
 chroot /mnt/installer /bin/bash
 cd 
 bash step2.sh
