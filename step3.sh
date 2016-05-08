@@ -22,8 +22,8 @@ sudo apt-get install build-essential qmlscene qt5-qmake qt5-default qtdeclarativ
 #tile
 sudo apt install xdotool wmctrl python-docopt -y
 
-sudo apt install wine
-sudo apt install python-docopt
-sudo apt install python-pyquery
+sudo apt install wine -y
+sudo apt install python-docopt -y
+sudo apt install python-pyquery -y
 
-sudo apt install ipython
+sudo apt install ipython -y
