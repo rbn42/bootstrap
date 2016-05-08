@@ -35,3 +35,6 @@ sudo apt-get install -y python-pil python-numpy python-scipy
 sudo apt install dconf-editor -y
 
 sudo apt install hsetroot feh -y
+sudo apt install python3-docopt -y
+sudo apt install python3-pyquery -y
+#sudo apt install conky -y
