@@ -38,3 +38,14 @@ sudo apt install hsetroot feh -y
 sudo apt install python3-docopt -y
 sudo apt install python3-pyquery -y
 #sudo apt install conky -y
+sudo apt install -y fcitx-rime
+sudo apt install -y fcitx-libs-qt5
+
+sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git python-skimage python-pandas  -y
+sudo apt-get install libopenblas-base libatlas3-base -y
+#sudo update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
+sudo apt-get install gcc gfortran python-dev libblas-dev liblapack-dev cython -y
+#sudo apt remove python-scipy
+#sudo pip2 install scipy -U
+
+
