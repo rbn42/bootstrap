@@ -10,6 +10,8 @@ bash ./chroot_installer.sh /dev/sda7
 cd
 bash ./sethostname.sh arch
 bash ./settimezone.sh Pacific/Auckland
+mkinitcpio -p linux
+bash ./setlocale.sh en_US.UTF-8
 bash step4.sh
 
 visudo #uncomment /wheel
