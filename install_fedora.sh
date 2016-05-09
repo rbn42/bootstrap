@@ -1,14 +1,14 @@
 #安装工具
-#這東西在arch下面弄有很大問題，可能最好用ubuntu來處理
-sudo apt-get install debootstrap
+sudo apt-get install yum rpm 
 cd ~/git/chroot_script
 sudo su
-export DEV_ROOT=/dev/sda7
+export DEV_ROOT=/dev/sda8
 export DEV_HOME=/dev/sda5
 #格式化一个分区,挂载到/mnt/installer
+umount $DEV_ROOT
 bash step1.sh $DEV_ROOT
-#下载ubuntu 16.04 系统
-bash step2.sh xenial
+#下载fedora系统
+bash step2.sh 
 #生成fstab，默認關閉了/home
 bash ./gen-fstab.sh $DEV_ROOT $DEV_HOME > /mnt/installer/etc/fstab
 #chroot

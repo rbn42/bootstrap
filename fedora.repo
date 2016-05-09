@@ -1,0 +1,4 @@
+[fedora]
+name=fedora
+baseurl=http://ucmirror.canterbury.ac.nz/linux/fedora/linux//releases/23/Everything/x86_64/os/
+enabled=1
