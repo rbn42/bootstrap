@@ -49,4 +49,4 @@ sudo apt-get install gcc gfortran python-dev libblas-dev liblapack-dev cython -y
 #sudo pip2 install scipy -U
 sudo apt install ctags -y
 sudo apt install python-autopep8 -y
-sudo apt install silversearcher-ag
+sudo apt install silversearcher-ag -y
