@@ -1,6 +1,8 @@
 #升级软件包
 apt-get update -y
 apt-get upgrade -y
+#安装grub，有跳提示的时候，可以什么都不选，略过
+apt-get install grub-pc -y 
 #安装内核
 apt install linux-image-generic -y
 #安装n卡驱动编译内核需要的源码
