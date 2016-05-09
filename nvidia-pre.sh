@@ -13,4 +13,3 @@ echo blacklist nvidiafb   >> /etc/modprobe.d/blacklist.conf
 echo blacklist rivatv     >> /etc/modprobe.d/blacklist.conf
 update-initramfs -u
 
-ldconfig /usr/local/cuda-7.5/lib64 
