@@ -41,6 +41,7 @@ vi /boot/grub/grub.cfg
 sudo su
 cd
 #安装n卡驱动
+#但是這裏安裝的時候32bit庫還是無法安裝成功，如果需要32bit支持，需要補充一些軟件包，在step8.sh中有。
 bash nvidia-install.sh
 #重啓測試
 reboot
