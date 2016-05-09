@@ -28,10 +28,10 @@ bash step6.sh
 bash nvidia-pre.sh "http://us.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run"
 #添加一个管理员账号
 bash adduser.sh username
-#手动生成grub.cfg
-grub-mkconfig -o /boot/grub/grub.cfg   
+#手动生成grub.cfg或者可以在宿主系統grub-mkconfig更新添加新系統
+#grub-mkconfig -o /boot/grub/grub.cfg   
 #手动安装grub引导
-grub-install /dev/sda
+#grub-install /dev/sda
 #以防万一，检查下grub.cfg生成正确。
 vi /boot/grub/grub.cfg
 
