@@ -9,6 +9,7 @@ bash ./chroot_installer.sh /dev/sda7
 
 cd
 bash ./sethostname.sh arch
+bash ./settimezone.sh Pacific/Auckland
 bash step4.sh
 
 visudo #uncomment /wheel
