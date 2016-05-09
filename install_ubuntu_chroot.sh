@@ -7,8 +7,8 @@ sudo su
 bash step1.sh /dev/sda7
 #下载ubuntu 15.04 系统
 bash step2.sh vivid
-cp *.sh   /mnt/installer/root
-chroot /mnt/installer /bin/bash
+#chroot
+bash chroot.sh
 cd 
 #語言設定
 bash setlocale.sh en US UTF-8
