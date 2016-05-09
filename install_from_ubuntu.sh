@@ -8,6 +8,7 @@ cd
 bash ./chroot_installer.sh /dev/sda7
 
 cd
+bash ./sethostname.sh arch
 bash step4.sh
 
 visudo #uncomment /wheel
