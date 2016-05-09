@@ -11,7 +11,7 @@ bash step2.sh xenial
 bash chroot.sh
 cd 
 #語言設定
-bash setlocale.sh en US UTF-8
+source setlocale.sh en US UTF-8
 #時區設定
 bash settimezone.sh Pacific/Auckland
 #添加32位支持；主機名設定
@@ -19,7 +19,7 @@ bash sethostname.sh ubuntu1604
 #軟件包
 bash step6.sh
 #n卡驅動前置操作，不是n卡不要執行
-bash step7.sh
+bash nvidia-pre.sh "http://us.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run"
 
 #添加一个管理员账号
 bash adduser.sh username
@@ -36,13 +36,14 @@ grub-install /dev/sda
 #重启系统，
 
 #如果是n卡，并且做了我上面说的操作，那么大概进不了gui 按ctrl+alt+f1进入tty界面，用管理员账号登陆
-#停止x
-sudo service lightdm stop
-#安装n卡驱动
 sudo su
 cd
-bash NVI*
-#安装基本全选yes
-sudo ln -s /usr/lib/libGL.so.1  /usr/lib/libGL.so
-sudo rm /usr/lib/x86_64-linux-gnu/libGL.so 
-sudo ln -s /usr/lib/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so 
+#安装n卡驱动
+bash nvidia-install.sh
+#重啓測試
+reboot
+
+#安裝其他軟件
+sudo su
+cd
+bash step8.sh
