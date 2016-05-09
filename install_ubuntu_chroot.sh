@@ -5,7 +5,7 @@ cd ~/git/chroot_script
 sudo su
 #格式化一个分区,挂载到/mnt/installer
 bash step1.sh /dev/sda7
-#下载ubuntu 15.04 系统
+#下载ubuntu 16.04 系统
 bash step2.sh xenial
 #chroot
 bash chroot.sh
