@@ -1,10 +1,11 @@
-#chroot準備
-mount --bind /dev /mnt/installer/dev
-mount --bind /dev/pts /mnt/installer/dev/pts
-mount -t proc /proc /mnt/installer/proc
-mount -t sysfs /sys /mnt/installer/sys
-
-cp /etc/resolv.conf /mnt/installer/etc/
-cp /etc/hosts       /mnt/installer/etc/
+cp /etc/resolv.conf /mnt/funtoo/etc/
 cp *.sh   /mnt/installer/root
-chroot /mnt/installer /bin/bash
+cp ./make.conf /mnt/funtoo/etc/
+
+cd /mnt/funtoo
+mount -t proc none proc
+mount --rbind /sys sys
+mount --rbind /dev dev
+
+chroot /mnt/funtoo 
+
