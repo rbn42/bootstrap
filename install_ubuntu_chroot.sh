@@ -5,10 +5,11 @@ cd ~/git/chroot_script
 sudo su
 #格式化一个分区,挂载到/mnt/installer
 #gparted
-bash step1.sh /dev/sda6
+bash step1.sh /dev/sda7
 chroot /mnt/installer /bin/bash
 cd 
 bash step2.sh
+bash step3.sh
 #安装grub，有跳提示的时候，可以什么都不选，略过
 apt-get install grub-pc -y 
 #手动生成grub.cfg

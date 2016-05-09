@@ -3,9 +3,9 @@
 mkdir /mnt/installer
 mkfs.ext4 $1
 mount $1 /mnt/installer
-#下载ubuntu 14.04 系统
-debootstrap trusty /mnt/installer http://archive.ubuntu.com/ubuntu
-#chroot到14.04系统
+#下载ubuntu 15.04 系统
+debootstrap vivid /mnt/installer http://archive.ubuntu.com/ubuntu
+#chroot到15.04系统
 mount --bind /dev /mnt/installer/dev
 mount --bind /dev/pts /mnt/installer/dev/pts
 mount -t proc /proc /mnt/installer/proc
