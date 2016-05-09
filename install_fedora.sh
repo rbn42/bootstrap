@@ -7,6 +7,9 @@ export DEV_HOME=/dev/sda5
 #格式化一个分区,挂载到/mnt/installer
 umount $DEV_ROOT
 bash step1.sh $DEV_ROOT
+mkdir -p /mnt/fedora/etc/yum/repos.d
+cp ./fedora.repo /mnt/fedora/etc/yum/repos.d
+cp ./fedora.repo /etc/yum/repos.d
 #下载fedora系统
 bash step2.sh 
 #生成fstab，默認關閉了/home
