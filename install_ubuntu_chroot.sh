@@ -6,7 +6,7 @@ sudo su
 #格式化一个分区,挂载到/mnt/installer
 bash step1.sh /dev/sda7
 #下载ubuntu 15.04 系统
-bash step2.sh vivid
+bash step2.sh xenial
 #chroot
 bash chroot.sh
 cd 
@@ -15,7 +15,7 @@ bash setlocale.sh en US UTF-8
 #時區設定
 bash settimezone.sh Pacific/Auckland
 #添加32位支持；主機名設定
-bash sethostname.sh ubuntu1504
+bash sethostname.sh ubuntu1604
 #軟件包
 bash step6.sh
 #n卡驅動前置操作，不是n卡不要執行
