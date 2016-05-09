@@ -11,6 +11,10 @@ cd
 bash step2.sh
 bash step3.sh
 bash step4.sh
+
+#添加一个管理员账号
+bash adduser.sh username
+
 #安装grub，有跳提示的时候，可以什么都不选，略过
 apt-get install grub-pc -y 
 #手动生成grub.cfg
@@ -20,9 +24,6 @@ grub-install /dev/sda
 #以防万一，检查下grub.cfg生成正确。
 vi /boot/grub/grub.cfg
 
-#添加一个管理员账号
-adduser username
-gpasswd -a username sudo
 #设定/etc/fstab，这个很重要，简单的做法是复制宿主系统的/etc/fstab到新系统
 #这里不展开了，上网查吧
 vi /etc/fstab

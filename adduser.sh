@@ -1,2 +1,2 @@
-useradd -m -g users -G wheel -s /bin/bash $1
-passwd $1
+adduser $1
+gpasswd -a $1 sudo
