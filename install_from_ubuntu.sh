@@ -1,16 +1,13 @@
 #step1
-cd ~/git/chroot_script
+#cd ~/git/chroot_script
 sudo su
-bash step1.sh
-chroot /tmp/root.x86_64 /bin/bash
+bash ./download_bootstrap.sh "https://mirrors.kernel.org/archlinux/iso/2016.05.01/archlinux-bootstrap-2016.05.01-x86_64.tar.gz"
+bash ./chroot_bootstrap.sh
 
-#step2
-cd ~/git/chroot_script
-bash step2.sh
-arch-chroot /mnt
+cd
+bash ./chroot_installer.sh /dev/sda7
 
-#step4
-cd ~/git/chroot_script
+cd
 bash step4.sh
 
 visudo #uncomment /wheel
