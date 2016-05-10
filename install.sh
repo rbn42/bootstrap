@@ -20,4 +20,3 @@ bash adduser.sh username
 #update grub in ubuntu, reboot
 passwd root # set random passwd, disable root
 
-bash step4.sh
