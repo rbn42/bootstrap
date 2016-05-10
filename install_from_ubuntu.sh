@@ -4,19 +4,22 @@ bash ./chroot_bootstrap.sh
 
 cd
 bash ./chroot_installer.sh /dev/sda8
-
 arch-chroot /mnt
+
 cd
 bash ./sethostname.sh arch
 bash ./settimezone.sh Pacific/Auckland
-mkinitcpio -p linux
 bash ./setlocale.sh en_US.UTF-8
+mkinitcpio -p linux
+
+passwd root # set random passwd, disable root
+
 bash step4.sh
 
 visudo #uncomment /wheel
-bash adduser.sh #username
+bash adduser.sh username
 
-passwd root # set random passwd, disable root
+
 
 #备用grub
 sudo su

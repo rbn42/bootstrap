@@ -4,7 +4,7 @@ pacman -S grub dialog
 #grub-mkconfig -o /boot/grub/grub.cfg
 pacman -S sudo wpa_supplicant xf86-input-evdev nvidia-libgl
 pacman -S nvidia libx264 ttf-ubuntu-font-family ttf-freefont
-pacman -S gvim firefox  vlc  thunderbird wmctrl xdotool   
+#pacman -S gvim firefox  vlc  thunderbird wmctrl xdotool   
 #############################for fvwm
 #pacman -S fvwm
 #pacman -S xorg sddm fvwm
