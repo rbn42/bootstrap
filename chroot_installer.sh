@@ -8,5 +8,5 @@ umount $1
 mkfs.ext4 $1
 mount $1 /mnt
 pacstrap /mnt base
-genfstab -p /mnt >> /mnt/etc/fstab
+genfstab -p /mnt > /mnt/etc/fstab
 cp *.sh /mnt/root
