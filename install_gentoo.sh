@@ -3,7 +3,7 @@ export DEV_ROOT=/dev/sda8
 export DEV_HOME=/dev/sda5
 #格式化一个分区,挂载到/mnt/installer
 bash step1.sh $DEV_ROOT
-ln -s /mnt/installer /mnt/funtoo
+ln -s /mnt/installer /mnt/gentoo
 bash ./download_tarbar.sh
 #生成fstab，默認關閉了/home
 bash ./gen-fstab.sh $DEV_ROOT $DEV_HOME > /mnt/installer/etc/fstab
@@ -20,7 +20,7 @@ emerge -auDN @world
 #內核
 emerge debian-sources
 emerge boot-update
-#不過funtoo管理grub太麻煩了，還是給ubuntu處理
+#不過gentoo管理grub太麻煩了，還是給ubuntu處理
 emerge linux-firmware networkmanager
 rc-update add NetworkManager default
 #nmtui

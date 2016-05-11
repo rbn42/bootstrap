@@ -1,3 +1,3 @@
 cd /mnt/funtoo
-wget http://build.funtoo.org/funtoo-current/x86-64bit/generic_64/stage3-latest.tar.xz
-tar xpf stage3-latest.tar.xz
+wget "http://distfiles.gentoo.org/releases/amd64/autobuilds/20160505/stage3-amd64-20160505.tar.bz2"
+tar xvjpf stage3-*.tar.bz2 --xattrs
