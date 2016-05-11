@@ -9,6 +9,7 @@ bash ./download_tarbar.sh
 bash ./gen-fstab.sh $DEV_ROOT $DEV_HOME > /mnt/installer/etc/fstab
 bash ./chroot.sh
 cd
+source /etc/profile
 #語言設定
 source setlocale.sh en US UTF-8
 #時區設定
