@@ -27,7 +27,7 @@ sudo apt install python-docopt -y
 sudo apt install python-pyquery -y
 
 sudo apt install ipython -y
-sudo apt install unity-tweak-tool
+sudo apt install unity-tweak-tool -y
 
 #compiz wallpaper
 sudo apt-get install -y compiz-plugins-extra compizconfig-settings-manager
