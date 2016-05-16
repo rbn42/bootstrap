@@ -50,3 +50,8 @@ sudo apt-get install gcc gfortran python-dev libblas-dev liblapack-dev cython -y
 sudo apt install ctags -y
 sudo apt install python-autopep8 -y
 sudo apt install silversearcher-ag -y
+
+
+#font
+sudo apt-get install  ttf-wqy-zenhei ttf-wqy-microhei -y
+sudo apt-get install fonts-droid  -y
