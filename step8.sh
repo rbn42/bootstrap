@@ -55,3 +55,6 @@ sudo apt install silversearcher-ag -y
 #font
 sudo apt-get install  ttf-wqy-zenhei ttf-wqy-microhei -y
 sudo apt-get install fonts-droid  -y
+
+#flash 
+sudo apt install pepperflashplugin-nonfree -y 
