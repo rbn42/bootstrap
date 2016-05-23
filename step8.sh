@@ -59,3 +59,6 @@ sudo apt-get install fonts-droid  -y
 #flash 
 sudo apt install pepperflashplugin-nonfree -y 
 sudo apt install -y flashplugin-installer
+
+#totem
+sudo apt remove totem -y
