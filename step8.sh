@@ -62,3 +62,4 @@ sudo apt install -y flashplugin-installer
 
 #totem
 sudo apt remove totem -y
+sudo apt remove -y evolution-data-server
