@@ -3,7 +3,7 @@
 sudo apt-get install debootstrap
 cd ~/git/chroot_script
 sudo su
-export DEV_ROOT=/dev/sda7
+export DEV_ROOT=/dev/sda6
 export DEV_HOME=/dev/sda5
 #格式化一个分区,挂载到/mnt/installer
 bash step1.sh $DEV_ROOT
@@ -25,7 +25,8 @@ bash sethostname.sh ubuntu
 #軟件包
 bash step6.sh
 #n卡驅動前置操作，不是n卡不要執行
-bash nvidia-pre.sh "http://us.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run"
+bash nvidia-pre.sh "http://us.download.nvidia.com/XFree86/Linux-x86_64/361.45.11/NVIDIA-Linux-x86_64-361.45.11.run"
+
 #添加一个管理员账号
 bash adduser.sh username
 #手动生成grub.cfg或者可以在宿主系統grub-mkconfig更新添加新系統
