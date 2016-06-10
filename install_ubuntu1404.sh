@@ -1,3 +1,4 @@
+#ubuntu16似乎装不了ubuntu14，原因是apt install过程要调用upstart而ubuntu16是systemd
 #安装工具
 #這東西在arch下面弄有很大問題，可能最好用ubuntu來處理
 sudo apt-get install debootstrap
@@ -28,7 +29,7 @@ bash step6.sh
 bash nvidia-pre.sh "http://us.download.nvidia.com/XFree86/Linux-x86_64/361.45.11/NVIDIA-Linux-x86_64-361.45.11.run"
 
 #添加一个管理员账号
-bash adduser.sh username
+bash adduser.sh #username
 #手动生成grub.cfg或者可以在宿主系統grub-mkconfig更新添加新系統
 #grub-mkconfig -o /boot/grub/grub.cfg   
 #手动安装grub引导
