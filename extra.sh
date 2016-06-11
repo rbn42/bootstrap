@@ -9,6 +9,9 @@
 ~/bin/install the_silver_searcher 
 ~/bin/install dunst
 
+~/bin/install cronie
+sudo systemctl enable cronie
+
 yaourt -S compiz
 yaourt -S emerald0.9
 yaourt -S emerald-themes
