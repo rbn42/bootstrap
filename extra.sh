@@ -9,6 +9,8 @@
 ~/bin/install the_silver_searcher 
 ~/bin/install dunst
 
+~/bin/install p7zip
+
 ~/bin/install cronie
 sudo systemctl enable cronie
 
