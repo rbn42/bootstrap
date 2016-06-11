@@ -8,3 +8,10 @@
 
 ~/bin/install the_silver_searcher 
 ~/bin/install dunst
+
+yaourt -S compiz
+yaourt -S emerald0.9
+yaourt -S emerald-themes
+yaourt -S gtk-theme-arc
+
+#vlc 
