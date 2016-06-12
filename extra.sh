@@ -1,5 +1,6 @@
 ~/bin/install unrar
 ~/bin/install unzip
+~/bin/install p7zip
 
 ~/bin/install rsync
 ~/bin/install python-pyquery
@@ -8,8 +9,6 @@
 
 ~/bin/install the_silver_searcher 
 ~/bin/install dunst
-
-~/bin/install p7zip
 
 ~/bin/install cronie
 sudo systemctl enable cronie
