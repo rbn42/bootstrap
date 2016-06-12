@@ -1,0 +1,10 @@
+sudo pacman -S --needed base-devel
+cd /dev/shm
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..

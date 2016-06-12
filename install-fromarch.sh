@@ -20,14 +20,15 @@ bash ./sethostname.sh arch
 bash ./settimezone.sh Pacific/Auckland
 mkinitcpio -p linux
 echo nameserver 8.8.8.8 > /etc/resolv.conf
-pacman -S sudo wpa_supplicant dialog
 
 visudo #uncomment /wheel
-bash adduser.sh username
+bash adduser.sh #username
 
-pacman -S grub
+pacman -S sudo wpa_supplicant dialog grub
+
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
+#到此为止重启,继续安装容易产生错误.
 #update grub in ubuntu, reboot
 #passwd root # set random passwd, disable root
 

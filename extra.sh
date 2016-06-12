@@ -1,21 +1,14 @@
-~/bin/install unrar
-~/bin/install unzip
-~/bin/install p7zip
-
-~/bin/install rsync
-~/bin/install python-pyquery
-~/bin/install aria2
-~/bin/install htop
-
-~/bin/install the_silver_searcher 
-~/bin/install dunst
-
-~/bin/install cronie
 sudo systemctl enable cronie
-
-yaourt -S compiz
-yaourt -S emerald0.9
-yaourt -S emerald-themes
 yaourt -S gtk-theme-arc
+cd /
+sudo ln -s /run/media 
+#nvidia-xconfig
 
-#vlc 
+#compiz installation is complex
+#yaourt -S compiz
+#yaourt -S emerald0.9
+
+#sudo pacman -S cuda 
+#yaourt -S python-theano
+
+###yaourt -S emerald-themes
