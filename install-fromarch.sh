@@ -25,6 +25,9 @@ pacman -S sudo wpa_supplicant dialog
 visudo #uncomment /wheel
 bash adduser.sh username
 
+pacman -S grub
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
 #update grub in ubuntu, reboot
 #passwd root # set random passwd, disable root
 
