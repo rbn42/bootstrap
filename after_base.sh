@@ -1,8 +1,9 @@
-pacman -S xorg
-#startx
 pacman -S nvidia
 #nvidia-xconfig
+pacman -S xorg
 pacman -S xfce4
+#startx
+
 #pacman -S xbindkeys
 #xbindkeys
 
