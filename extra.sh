@@ -3,6 +3,8 @@ yaourt -S gtk-theme-arc
 cd /
 sudo ln -s /run/media 
 #nvidia-xconfig
+sudo pacman -S \
+    python-pillow
 
 #compiz installation is complex
 #compiz编译在这台电脑上很容易失败,所以只能开机后进入tty单开yaourt编译.
