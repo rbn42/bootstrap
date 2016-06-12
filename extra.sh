@@ -10,6 +10,7 @@ sudo ln -s /run/media
 #yaourt -S emerald0.9
 
 #sudo pacman -S cuda 
+#yaourt -S python-pycuda
 #yaourt -S python-theano
 
 #这个是1.9版本的,但是我们需要的是1.10版本.panda3d网上只提供了deb包,所以我们要自己编译了.
