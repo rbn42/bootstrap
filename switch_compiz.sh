@@ -16,8 +16,10 @@ sudo pacman -R emerald0.9
 sudo pacman -R compiz
 yaourt -S ccsm
 yaourt -S compiz-fusion-plugins-main
+#这里有wallpaper
 cd ~/arch-build/compiz-fusion-plugins-extra;makepkg -i
-cd ~/arch-build/compiz-fusion-plugins-experimental;makepkg -i 
+#可以不用装
+#cd ~/arch-build/compiz-fusion-plugins-experimental;makepkg -i 
 yaourt -S emerald
 
 sudo pacman -R emerald compiz-fusion-plugins-extra compiz-fusion-plugins-experimental compiz-fusion-plugins-main ccsm compiz
