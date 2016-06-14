@@ -14,6 +14,9 @@ cd ~/arch-build/compiz/;makepkg
 cd ~/arch-build/compiz-core;makepkg -i
 
 #可以把15改到25/0.1大概是极限了,到30 compiz就会崩溃
+#0.0不可用,效果怪异
+#其实blur.c中应该可以修改blur算法的,大约2000行代码.太麻烦了,所以算了.
+#现在的算法和compton不同,用的是一维的kernal
 vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/plugins/blur.c #2处改动
 vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml #1处改动
 vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml.in #1处改动
