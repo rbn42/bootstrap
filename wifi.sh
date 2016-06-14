@@ -8,11 +8,12 @@ sudo wifi-menu -o
 ~/bin/install netctl dialog ppp dhcpcd wpa_supplicant wpa_actiond
 
 cd /etc/netctl/
-export PROFILE=`ls *Mas*`
-echo $PROFILE
-sudo netctl start $PROFILE
-sudo netctl enable $PROFILE
-sudo netctl reenable $PROFILE
+sudo mv *Mas* wifi
+#export PROFILE=`ls *Mas*`
+#echo $PROFILE
+#sudo netctl start $PROFILE
+#sudo netctl enable $PROFILE
+#sudo netctl reenable $PROFILE
 
 #这种办法下netctl会阻塞boot,估计要20多秒.
 #但是我想我们必须要把netctl注册为服务,因为这样在wifi断线后就会自动重连了吧.
