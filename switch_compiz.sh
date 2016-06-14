@@ -13,11 +13,10 @@ git clone https://aur.archlinux.org/compiz-fusion-plugins-experimental.git
 cd ~/arch-build/compiz/;makepkg
 cd ~/arch-build/compiz-core;makepkg -i
 
-#好像修改了也没有什么效果.
-#15配0.1似乎差不多了
-vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/plugins/blur.c
-vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml
-vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml.in
+#可以把15改到25/0.1大概是极限了,到30 compiz就会崩溃
+vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/plugins/blur.c #2处改动
+vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml #1处改动
+vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml.in #1处改动
 cd ~/arch-build/compiz-core
 makepkg -ef
 makepkg -i
