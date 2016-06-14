@@ -9,6 +9,9 @@ sudo wifi-menu -o
 
 cd /etc/netctl/
 sudo mv *Mas* wifi
+sudo visudo 
+#%wheel ALL=(ALL) NOPASSWD: /usr/bin/netctl start wifi
+
 #export PROFILE=`ls *Mas*`
 #echo $PROFILE
 #sudo netctl start $PROFILE
