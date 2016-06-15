@@ -18,8 +18,13 @@ cd ~/arch-build/compiz-core;makepkg -i
 #其实blur.c中应该可以修改blur算法的,大约2000行代码.太麻烦了,所以算了.
 #现在的算法和compton不同,用的是一维的kernal
 vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/plugins/blur.c #2处改动
+#第三处改动，有一个4096数值，把radius限制在了28，如果改到8192，可以提升radius到50（或者以上），看来不是平方比例，而是一般比例，那么提升到1024*16,应该可疑做到radius100了。
+#我们一次性提到1024*64吧。
+#进一步到 4096 / 28 * 500 也就是1024*256
 vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml #1处改动
+#第二处，调整strength精度到0.001
 vim ~/arch-build/compiz-core/src/compiz-0.8.12.3/metadata/blur.xml.in #1处改动
+#第二处，调整strength精度到0.001
 cd ~/arch-build/compiz-core
 makepkg -ef
 makepkg -i
