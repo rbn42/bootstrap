@@ -42,6 +42,7 @@ pacman -S \
     aria2 firefox     thunderbird     transmission-gtk \
     thunar \
     mpv     ncmpcpp     mpd    mpc \
+    xsel \
 
 #startx
 
