@@ -42,7 +42,10 @@ pacman -S \
     aria2 firefox     thunderbird     transmission-gtk \
     thunar \
     mpv     ncmpcpp     mpd    mpc \
-    xsel \
+
+echo ranger 
+pacman -S xsel lynx elinks highlight atool mediainfo
+#img2txt pdftotext 
 
 #startx
 
