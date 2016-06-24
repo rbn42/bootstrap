@@ -1,5 +1,6 @@
 pacman -S nvidia xorg xfce4 \
-    asciidoc autoconf automake autopep8 cmake ctags \
+
+pacman -S asciidoc autoconf automake autopep8 cmake ctags \
     dialog fcitx-configtool \
     fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-rime fcitx-ui-light \
     fish gcc git \
