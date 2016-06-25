@@ -1,7 +1,6 @@
 #安装工具
 #這東西在arch下面弄有很大問題，可能最好用ubuntu來處理
 sudo apt-get install debootstrap
-cd ~/git/chroot_script
 sudo su
 export DEV_ROOT=/dev/sda7
 export DEV_HOME=/dev/sda5
