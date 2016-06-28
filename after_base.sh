@@ -43,6 +43,7 @@ pacman -S \
     aria2 firefox     thunderbird     transmission-gtk \
     thunar \
     mpv     ncmpcpp     mpd    mpc \
+    unclutter \
 
 echo ranger 
 pacman -S xsel lynx elinks highlight atool mediainfo
