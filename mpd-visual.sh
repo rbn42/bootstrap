@@ -6,11 +6,11 @@ pacmd stat
 
 
 """
-Controls (these are listed in the menu under "hotkeys":
+Controls (these are listed in the menu under hotkeys:
 
 m - brings up a menu
 f - toggles fullscreen on/off
-l - "locks" to a particular preset
+l - locks to a particular preset
 y - toggles shuffle mode
 n - next preset
 p - previous preset
