@@ -1,6 +1,8 @@
 sudo systemctl enable cronie
 yaourt -S gtk-theme-arc
 yaourt -S awoken-icons
+yaourt -S fcitx-sogoupinyin
+
 cd /
 sudo ln -s /run/media 
 #nvidia-xconfig
