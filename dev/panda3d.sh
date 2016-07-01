@@ -12,7 +12,12 @@ cd ~/git
 git clone https://github.com/panda3d/panda3d.git
 cd panda3d
 python2.7 makepanda/makepanda.py --everything --installer  --no-vision   --threads 2 
+#编译很容易失败,重启电脑多试几次.
 
 #sudo dpkg -i panda3d*.deb 
 #sudo apt install -f
+
+sudo python2.7 makepanda/installpanda.py 
+sudo ldconfig
+
 
