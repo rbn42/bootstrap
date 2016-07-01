@@ -7,17 +7,26 @@
 #sudo pacman -S fftw
 
 #ln -s /usr/lib/libGL.so.xx.xx.xx /usr/lib/libGL.so
+
+#python2 python3 只能装一个,因为so库文件的路径是重叠的.
+#暂时先装上之前用过的python2
+
 cd ~/git
-#rm panda3d -fr
+git clone https://github.com/panda3d/panda3d.git
+mv panda3d panda3d-py2
+cd panda3d-py2
+python2.7 makepanda/makepanda.py --everything --installer  --no-vision   --threads 2
+#编译很容易失败,重启电脑多试几次.
+sudo python2.7 makepanda/installpanda.py 
+sudo ldconfig
+
+
+cd ~/git
 git clone https://github.com/panda3d/panda3d.git
 cd panda3d
-python2.7 makepanda/makepanda.py --everything --installer  --no-vision   --threads 2 
+python3 makepanda/makepanda.py --everything --installer  --no-vision   --threads 2
 #编译很容易失败,重启电脑多试几次.
-
-#sudo dpkg -i panda3d*.deb 
-#sudo apt install -f
-
-sudo python2.7 makepanda/installpanda.py 
+sudo python3 makepanda/installpanda.py 
 sudo ldconfig
 
 
