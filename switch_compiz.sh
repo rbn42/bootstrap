@@ -10,8 +10,17 @@ git clone https://aur.archlinux.org/compiz-fusion-plugins-extra.git
 git clone https://aur.archlinux.org/compiz-fusion-plugins-experimental.git
 #git clone https://aur.archlinux.org/emerald-themes.git
 
-cd ~/arch-build/compiz/;makepkg
-cd ~/arch-build/compiz-core;makepkg -i
+#安装和merge git的办法,不过这个版本没弄好emerald依赖.
+#cd ~/arch-build/compiz/;makepkg
+#cd ~/arch-build/compiz-core;makepkg -i
+#
+#git clone https://aur.archlinux.org/compiz-core-git.git
+#cd ~/arch-build/compiz-core-git;makepkg -i
+#cd ~/arch-build/compiz-core-git/src/compiz
+#git remote add rbn42 https://github.com/rbn42/compiz.git
+#git pull rbn42 increase-blur-radius
+#git merge rbn42/increase-blur-radius
+#
 
 #可以把15改到25/0.1大概是极限了,到30 compiz就会崩溃
 #0.0不可用,效果怪异
