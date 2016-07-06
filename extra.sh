@@ -7,9 +7,12 @@ yaourt -S twmn-git
 
 #好像mpd-notification使用者更多,不过下载gpg验证失败.
 yaourt -S mpd-notification-git
+
 #用vundle安装ycm有点麻烦,总是要手动编译,而且可能会出错.
-#不过aur的安装失败了.
+#安装失败
 #yaourt -S vim-youcompleteme-git
+#轻依赖版,(奇怪的会下载145m的llvm),安装失败.
+yaourt -S vim-youcompleteme-core-git
 
 cd /
 sudo ln -s /run/media 
