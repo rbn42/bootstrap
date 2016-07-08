@@ -6,6 +6,8 @@ yaourt -S fcitx-sogoupinyin
 yaourt -S volnoti
 yaourt -S twmn-git
 
+yaourt -S breeze-snow-cursor-theme
+
 #好像mpd-notification使用者更多,不过下载gpg验证失败.
 yaourt -S mpd-notification-git
 
