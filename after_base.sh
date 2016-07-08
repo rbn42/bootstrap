@@ -48,6 +48,7 @@ pacman -S \
     xautomation  \
     openssh  \
     youtube-dl \
+    xbindkeys \
 
 #youtube-dl youtube下载?
 
