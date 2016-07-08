@@ -1,5 +1,6 @@
 sudo systemctl enable cronie
 yaourt -S gtk-theme-arc
+yaourt -S ambiance-radiance-flat-colors-suite
 yaourt -S awoken-icons
 yaourt -S fcitx-sogoupinyin
 yaourt -S volnoti
