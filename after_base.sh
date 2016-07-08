@@ -47,6 +47,9 @@ pacman -S \
     unclutter \
     xautomation  \
     openssh  \
+    youtube-dl \
+
+#youtube-dl youtube下载?
 
 echo ranger 
 pacman -S xsel lynx elinks highlight atool mediainfo
