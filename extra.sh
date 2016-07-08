@@ -12,17 +12,12 @@ yaourt -S mpd-notification-git
 #安装失败
 #yaourt -S vim-youcompleteme-git
 #轻依赖版,(奇怪的会下载145m的llvm),安装失败.
-yaourt -S vim-youcompleteme-core-git
+#yaourt -S vim-youcompleteme-core-git
 
 cd /
 sudo ln -s /run/media 
 #nvidia-xconfig
-sudo pacman -S \
-    python-pillow
 #xte
-sudo pacman -S     xautomation 
-
-sudo pacman -S openssh
 
 #compiz installation is complex
 #compiz编译在这台电脑上很容易失败,所以只能开机后进入tty单开yaourt编译.

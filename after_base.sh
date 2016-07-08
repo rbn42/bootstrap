@@ -29,6 +29,7 @@ pacman -S --noconfirm \
     python2-numpy \
     python2-pip python2-scipy qt5-graphicaleffects qt5-quickcontrols \
     python-pyquery \
+    python-pillow \
 
 echo standalone app
 pacman -S \
@@ -44,6 +45,8 @@ pacman -S \
     thunar \
     mpv     ncmpcpp     mpd    mpc \
     unclutter \
+    xautomation  \
+    openssh  \
 
 echo ranger 
 pacman -S xsel lynx elinks highlight atool mediainfo
