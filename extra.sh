@@ -11,6 +11,13 @@ yaourt -S breeze-snow-cursor-theme
 #好像mpd-notification使用者更多,不过下载gpg验证失败.
 yaourt -S mpd-notification-git
 
+#vim相关
+yaourt -S js-beautify
+#安装失败
+#yaourt -S beautify-css
+
+
+
 #用vundle安装ycm有点麻烦,总是要手动编译,而且可能会出错.
 #安装失败
 #yaourt -S vim-youcompleteme-git
