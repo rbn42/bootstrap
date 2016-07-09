@@ -12,9 +12,7 @@ yaourt -S breeze-snow-cursor-theme
 yaourt -S mpd-notification-git
 
 #vim相关
-yaourt -S js-beautify
-#安装失败
-#yaourt -S beautify-css
+yaourt -S js-beautify #包含css和html
 
 
 
