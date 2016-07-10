@@ -49,6 +49,8 @@ pacman -S \
     openssh  \
     youtube-dl \
     xbindkeys \
+    gnome-font-viewer \
+
 
 #youtube-dl youtube下载?
 
