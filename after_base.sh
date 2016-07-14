@@ -1,4 +1,6 @@
-pacman -S nvidia xorg xfce4 \
+pacman -S nvidia xorg #xfce4 
+#不用通过xfce4安装startx
+pacman -S xorg-xinit  xfce4-panel
 
 pacman -S asciidoc autoconf automake autopep8 cmake ctags \
     dialog fcitx-configtool \
