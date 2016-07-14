@@ -22,6 +22,10 @@ pacman -S --noconfirm \
     ttf-linux-libertine ttf-ubuntu-font-family wqy-microhei \
     wqy-microhei-lite \
     wqy-zenhei \
+    adobe-source-han-sans-otc-fonts  \
+    adobe-source-han-sans-cn-fonts   \
+    adobe-source-han-sans-tw-fonts    \
+    wqy-bitmapfont    \
 
 echo python
 pacman -S --noconfirm \
