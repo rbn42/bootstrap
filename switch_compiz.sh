@@ -52,3 +52,30 @@ sudo pacman -R emerald compiz-fusion-plugins-extra compiz-fusion-plugins-experim
 cd ~/arch-build/compiz/;makepkg -i
 yaourt -S emerald0.9
 
+
+#################################
+#从github编译compiz的configurre配置
+
+_configure_opts=(
+  --prefix=/usr
+  --enable-shared
+  --enable-dbus
+  --enable-dbus-glib
+  --enable-librsvg
+  --enable-glib
+  --disable-static
+  --disable-inotify
+)
+
+  _configure_opts+=("--disable-marco")
+
+  cd "${srcdir}/${_upstream}"
+
+  NOCONFIGURE=1 ./autogen.sh
+  ./configure "${_configure_opts[@]}"
+
+  if ! grep -q pkg_cv_GTK config.log;then
+    # make sure only compiz-core-git is created if gtk is missing
+    msg "Making sure only $pkgbase is made, gtk+2 is missing"
+    pkgname=("$pkgbase")
+  fi
