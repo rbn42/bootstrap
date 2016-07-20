@@ -10,6 +10,9 @@ git clone https://aur.archlinux.org/compiz-fusion-plugins-extra.git
 git clone https://aur.archlinux.org/compiz-fusion-plugins-experimental.git
 #git clone https://aur.archlinux.org/emerald-themes.git
 
+#TODO 2016-07-21 08:34:54 Thu NZST
+#还有个办法是修改PKGBUILD文件,把github源替换成我们自己的.
+
 #安装和merge git的办法,不过这个版本没弄好emerald依赖.
 #cd ~/arch-build/compiz/;makepkg
 #cd ~/arch-build/compiz-core;makepkg -i
