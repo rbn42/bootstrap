@@ -11,6 +11,11 @@
 #python2 python3 只能装一个,因为so库文件的路径是重叠的.
 #暂时先装上之前用过的python2
 
+#2016-08-06 20:17:31 Sat NZST
+#python3暂时是不行的,因为texture的getdata方法会尝试转换成utf8,不知是哪里出了问题.
+#当然这里肯定会出现encode错误
+
+
 cd ~/git
 git clone https://github.com/panda3d/panda3d.git
 mv panda3d panda3d-py2
