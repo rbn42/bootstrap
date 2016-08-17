@@ -21,10 +21,10 @@ prepare() {
 #makepkg -ef
 makepkg -i
 
-yaourt -S ccsm
-yaourt -S compiz-fusion-plugins-main
+yaourt -S ccsm --noconfirm
+yaourt -S compiz-fusion-plugins-main --noconfirm
 #这里有wallpaper
-yaourt -S compiz-fusion-plugins-extra
+yaourt -S compiz-fusion-plugins-extra --noconfirm
 #可以不用装
 #cd ~/arch-build/compiz-fusion-plugins-experimental;makepkg -i 
-yaourt -S emerald
+yaourt -S emerald --noconfirm
