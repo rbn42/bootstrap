@@ -11,8 +11,9 @@ cd ~/arch-build/compiz-core-git
 echo """
 prepare() {
   cd \"\${srcdir}/\${_upstream}\";
+  git checkout v0.8.12.3
   git remote add repo https://github.com/rbn42/compiz.git;
-  git pull repo increase-blur-radius --no-edit;
+  git pull repo mystable --no-edit;
   #git merge repo/increase-blur-radius --no-edit;
 }
 """ >> PKGBUILD
