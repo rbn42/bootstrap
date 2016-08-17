@@ -24,7 +24,7 @@ makepkg -i
 yaourt -S ccsm
 yaourt -S compiz-fusion-plugins-main
 #这里有wallpaper
-yaourrt -S compiz-fusion-plugins-extra
+yaourt -S compiz-fusion-plugins-extra
 #可以不用装
 #cd ~/arch-build/compiz-fusion-plugins-experimental;makepkg -i 
 yaourt -S emerald
