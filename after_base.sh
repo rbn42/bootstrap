@@ -36,7 +36,8 @@ pacman -S --noconfirm \
     python2-pip python2-scipy qt5-graphicaleffects qt5-quickcontrols \
     python-pyquery \
     python-pillow \
-
+echo spell
+pacman -S --noconfirm aspell-en
 echo standalone app
 pacman -S \
     feh \
