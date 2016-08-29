@@ -5,7 +5,7 @@
 #生成profile
 sudo wifi-menu -o
 #package
-~/bin/install netctl dialog ppp dhcpcd wpa_supplicant wpa_actiond
+#~/bin/install netctl dialog ppp dhcpcd wpa_supplicant wpa_actiond
 
 cd /etc/netctl/
 sudo mv *Mas* wifi
