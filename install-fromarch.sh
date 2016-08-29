@@ -21,10 +21,11 @@ bash ./settimezone.sh Pacific/Auckland
 mkinitcpio -p linux
 echo nameserver 8.8.8.8 > /etc/resolv.conf
 
+#wifi sudo grub
+pacman -S sudo wpa_supplicant dialog grub netctl ppp dhcpcd wpa_actiond
+
 visudo #uncomment /wheel
 bash adduser.sh #username
-
-pacman -S sudo wpa_supplicant dialog grub
 
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
