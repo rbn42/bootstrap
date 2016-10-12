@@ -37,6 +37,7 @@ yaourt -S emerald --noconfirm
 #所以需要安装github的版本,至于aur的git版本以为有依赖关系问题,所以我们只能绕开
 #
 #将来该功能添加后就不需要了
+#https://github.com/compiz-reloaded/compiz-plugins-extra/issues/1
 git clone https://github.com/compiz-reloaded/compiz-plugins-extra.git
 cd compiz-plugins-extra/
 NOCONFIGURE=1 ./autogen.sh
