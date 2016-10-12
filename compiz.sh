@@ -31,3 +31,14 @@ yaourt -S compiz-fusion-plugins-extra --noconfirm
 #可以不用装
 #cd ~/arch-build/compiz-fusion-plugins-experimental;makepkg -i 
 yaourt -S emerald --noconfirm
+
+#2016-10-13 03:48:36 Thu NZDT
+#因为grid插件0.9版本新增的snap功能暂且还没有没进入release,
+#所以需要安装github的版本,至于aur的git版本以为有依赖关系问题,所以我们只能绕开
+#
+#将来该功能添加后就不需要了
+git clone https://github.com/compiz-reloaded/compiz-plugins-extra.git
+cd compiz-plugins-extra/
+NOCONFIGURE=1 ./autogen.sh
+./configure --prefix=/usr
+make
