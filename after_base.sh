@@ -42,21 +42,19 @@ echo standalone app
 pacman -S \
     feh \
     scrot trash-cli w3m wget wmctrl xdotool \
-    gparted     htop \
+    htop \
     screenfetch \
     gvim  \
     conky \
     unrar unzip p7zip \
     the_silver_searcher rsync dunst cronie \
-    aria2 firefox     thunderbird     transmission-gtk \
-    thunar \
+    aria2  \
     mpv     ncmpcpp     mpd    mpc \
     unclutter \
     xautomation  \
     openssh  \
     youtube-dl \
     xbindkeys \
-    gnome-font-viewer \
 
 
 #youtube-dl youtube下载?
