@@ -9,3 +9,4 @@ pacman -S \
     gwenview    \
     kate \
     transmission-qt \
+    "$@" 

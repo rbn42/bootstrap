@@ -61,6 +61,12 @@ pacman -S \
 
 echo ranger 
 pacman -S xsel lynx elinks highlight atool mediainfo
+
+echo ui common
+bash ./ui_common.sh --noconfirm 
+echo ui qt
+bash ./ui_qt.sh --noconfirm 
+
 #img2txt pdftotext 
 
 #startx

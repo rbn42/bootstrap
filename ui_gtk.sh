@@ -8,3 +8,4 @@
 pacman -S \
     evince nautilus thunar \
     transmission-gtk \
+    "$@" 
