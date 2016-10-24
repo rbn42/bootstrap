@@ -3,7 +3,9 @@ yaourt -S gtk-theme-arc
 yaourt -S ambiance-radiance-flat-colors-suite
 yaourt -S awoken-icons
 yaourt -S fcitx-sogoupinyin
-yaourt -S volnoti
+#yaourt -S volnoti
+#原版似乎坏了
+yaourt -S volnoti-hcchu-git
 yaourt -S twmn-git
 
 #yaourt -S conky-lua-nv
