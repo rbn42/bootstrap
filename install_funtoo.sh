@@ -1,5 +1,5 @@
 sudo su
-export DEV_ROOT=/dev/sda8
+export DEV_ROOT=/dev/sdd1
 export DEV_HOME=/dev/sda5
 #格式化一个分区,挂载到/mnt/installer
 bash step1.sh $DEV_ROOT
