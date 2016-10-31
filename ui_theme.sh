@@ -6,6 +6,7 @@ yaourt -S gtk-theme-arc
 yaourt -S ambiance-radiance-flat-colors-suite
 
 #图标
+#纯色awoken需要运行脚本后才能生成的
 yaourt -S awoken-icons
 yaourt -S la-capitaine-icon-theme-git
 
