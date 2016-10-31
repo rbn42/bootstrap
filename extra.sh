@@ -1,7 +1,4 @@
 sudo systemctl enable cronie
-yaourt -S gtk-theme-arc
-yaourt -S ambiance-radiance-flat-colors-suite
-yaourt -S awoken-icons
 yaourt -S fcitx-sogoupinyin
 #yaourt -S volnoti
 #原版似乎坏了
@@ -9,8 +6,6 @@ yaourt -S volnoti-hcchu-git
 yaourt -S twmn-git
 
 #yaourt -S conky-lua-nv
-
-yaourt -S breeze-snow-cursor-theme
 
 #好像mpd-notification使用者更多,不过下载gpg验证失败.
 yaourt -S mpd-notification-git

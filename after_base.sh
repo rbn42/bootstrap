@@ -13,20 +13,6 @@ pacman -S asciidoc autoconf automake autopep8 cmake ctags \
     xterm \
     udisks2 \
 
-echo font
-pacman -S --noconfirm \
-    adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts \
-    adobe-source-han-sans-tw-fonts adobe-source-sans-pro-fonts \
-    adobe-source-serif-pro-fonts \
-    ttf-arphic-ukai ttf-arphic-uming ttf-dejavu ttf-droid ttf-freefont \
-    ttf-linux-libertine ttf-ubuntu-font-family wqy-microhei \
-    wqy-microhei-lite \
-    wqy-zenhei \
-    adobe-source-han-sans-otc-fonts  \
-    adobe-source-han-sans-cn-fonts   \
-    adobe-source-han-sans-tw-fonts    \
-    wqy-bitmapfont    \
-
 echo python
 pacman -S --noconfirm \
     ipython ipython2 \
