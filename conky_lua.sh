@@ -9,6 +9,7 @@ cd conky-git
 
 #修改build(),加入这些配置
 #    -D BUILD_LUA_CAIRO=ON \
+#    -D BUILD_LUA_IMLIB2=ON \
 #    -D APP_TOLUA=/usr/bin/toluapp \
 #    -D TOLUA_INCLUDE_PATH=/usr/include \
 #    -D TOLUA_LIBS=/usr/lib/libtoluapp.so \
