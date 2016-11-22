@@ -1,15 +1,18 @@
+pacman -S base base-devel fcitx-im
+
+pacman -S xorg-server xorg-xinit
+
 pacman -S nvidia xorg #xfce4 
 #不用通过xfce4安装startx
 pacman -S xorg-xinit  xfce4-panel
 
-pacman -S asciidoc autoconf automake autopep8 cmake ctags \
+pacman -S asciidoc autopep8 cmake ctags \
     dialog fcitx-configtool \
-    fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-rime fcitx-ui-light \
-    fish gcc git \
+    fish git \
     glibc \
-    gzip imagemagick \
-    make ntfs-3g \
-    opendesktop-fonts pamixer pkg-config pulseaudio pulseaudio-alsa \
+    imagemagick \
+    ntfs-3g \
+    opendesktop-fonts pamixer pulseaudio pulseaudio-alsa \
     xterm \
     udisks2 \
 
