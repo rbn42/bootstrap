@@ -17,16 +17,18 @@ yaourt -S breeze-snow-cursor-theme
 
 #字体
 echo font
+    #adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts \
+    #adobe-source-han-sans-tw-fonts adobe-source-sans-pro-fonts \
+    #adobe-source-serif-pro-fonts \
 pacman -S --noconfirm \
-    adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts \
-    adobe-source-han-sans-tw-fonts adobe-source-sans-pro-fonts \
-    adobe-source-serif-pro-fonts \
     ttf-arphic-ukai ttf-arphic-uming ttf-dejavu ttf-droid ttf-freefont \
-    ttf-linux-libertine ttf-ubuntu-font-family wqy-microhei \
+    ttf-linux-libertine ttf-ubuntu-font-family 
+pacman -S --noconfirm \
+    wqy-microhei \
     wqy-microhei-lite \
     wqy-zenhei \
-    adobe-source-han-sans-otc-fonts  \
-    adobe-source-han-sans-cn-fonts   \
-    adobe-source-han-sans-tw-fonts    \
     wqy-bitmapfont    \
+    #adobe-source-han-sans-otc-fonts  \
+    #adobe-source-han-sans-cn-fonts   \
+    #adobe-source-han-sans-tw-fonts    \
 pacman -S --noconfirm  dina-font
