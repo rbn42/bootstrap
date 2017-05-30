@@ -13,7 +13,7 @@ echo """
 prepare() {
   cd \"\${srcdir}/\${_upstream}-\${pkgver}\"
   git clone https://github.com/compiz-reloaded/compiz.git;
-  cd compiz;git checkout v0.8.12.3;
+  cd compiz;git checkout v0.8.14;
   mv .git ../;cd ..;
   git remote add repo https://github.com/rbn42/compiz.git;
   git pull repo mystable --no-edit;
@@ -38,8 +38,15 @@ yaourt -S emerald --noconfirm
 #
 #将来该功能添加后就不需要了
 #https://github.com/compiz-reloaded/compiz-plugins-extra/issues/1
-git clone https://github.com/compiz-reloaded/compiz-plugins-extra.git
-cd compiz-plugins-extra/
-NOCONFIGURE=1 ./autogen.sh
-./configure --prefix=/usr
-make
+#2017-05-30 08:47:32 Tue JST  0.8.14已更新grid snap
+###git clone https://github.com/compiz-reloaded/compiz-plugins-extra.git
+###cd compiz-plugins-extra/
+###NOCONFIGURE=1 ./autogen.sh
+###./configure --prefix=/usr
+###make
+
+"""
+2017-05-30 10:17:18 Tue JST
+icu58 到icu59更新似乎改了一堆api牵扯了一堆软件
+libcompizconfig0.8.14 在icu59下编译失败,需要滚回icu58
+"""
