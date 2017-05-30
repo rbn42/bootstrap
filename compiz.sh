@@ -49,4 +49,5 @@ yaourt -S emerald --noconfirm
 2017-05-30 10:17:18 Tue JST
 icu58 到icu59更新似乎改了一堆api牵扯了一堆软件
 libcompizconfig0.8.14 在icu59下编译失败,需要滚回icu58
+libcompizconfig似乎只是被ccsm依赖,但是没有ccsm似乎compiz不正常工作
 """
