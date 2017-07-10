@@ -22,7 +22,7 @@ prepare() {
 """ >> PKGBUILD
 
 #makepkg -ef
-makepkg -i
+makepkg -is
 
 yaourt -S ccsm --noconfirm
 yaourt -S compiz-fusion-plugins-main --noconfirm
