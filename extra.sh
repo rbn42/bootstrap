@@ -2,7 +2,10 @@ sudo systemctl enable cronie
 yaourt -S fcitx-sogoupinyin
 #yaourt -S volnoti
 #原版似乎坏了
-yaourt -S volnoti-hcchu-git
+#yaourt -S volnoti-hcchu-git
+#2017-07-20 19:44:38 Thu NZST
+#现在又能编译了
+yaourt -S volnoti
 yaourt -S twmn-git
 
 #yaourt -S conky-lua-nv
