@@ -1,17 +1,24 @@
 sudo su
-pacman -S arch-install-scripts
-export ROOT=/dev/sda6
-umount $ROOT
-mkfs.ext4 $ROOT
-mount $ROOT /mnt
-pacstrap /mnt base
-genfstab -p /mnt > /mnt/etc/fstab
-cp *.sh /mnt/root
+DEV_ROOT=/dev/sda3
+DEV_BOOT=/dev/sda2
+ROOT=/mnt/root
 
-mount --bind /dev /mnt/dev
-mount --bind /sys /mnt/sys
-mount --bind /proc /mnt/proc
-chroot /mnt
+pacman -S arch-install-scripts
+
+umount $DEV_ROOT
+mkfs.ext4 $DEV_ROOT
+
+mkdir $ROOT
+mount $DEV_ROOT $ROOT
+pacstrap $ROOT base
+mount $DEV_BOOT $ROOT/boot
+genfstab -p $ROOT > $ROOT/etc/fstab
+cp *.sh $ROOT/root
+
+mount --bind /dev $ROOT/dev
+mount --bind /sys $ROOT/sys
+mount --bind /proc $ROOT/proc
+chroot $ROOT
 #arch-chroot /mnt
 
 cd
