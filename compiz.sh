@@ -21,6 +21,7 @@ prepare() {
 }
 """ >> PKGBUILD
 
+#echo  _use_marco=1  >> PKGBUILD
 #makepkg -ef
 makepkg -is
 
