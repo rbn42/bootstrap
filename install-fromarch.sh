@@ -21,22 +21,4 @@ mount --bind /proc $ROOT/proc
 chroot $ROOT
 #arch-chroot /mnt
 
-cd
-bash ./setlocale.sh en_US.UTF-8
-bash ./sethostname.sh arch
-bash ./settimezone.sh Pacific/Auckland
-mkinitcpio -p linux
-echo nameserver 8.8.8.8 > /etc/resolv.conf
-
-#wifi sudo grub
-pacman -S sudo wpa_supplicant dialog grub netctl ppp dhcpcd wpa_actiond
-
-visudo #uncomment /wheel
-bash adduser.sh #username
-
-grub-install /dev/sda
-grub-mkconfig -o /boot/grub/grub.cfg
-#到此为止重启,继续安装容易产生错误.
-#update grub in ubuntu, reboot
-#passwd root # set random passwd, disable root
-
+bash ./install2.sh
