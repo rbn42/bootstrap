@@ -12,7 +12,7 @@ mkdir $ROOT
 mount $DEV_ROOT $ROOT
 pacstrap $ROOT base
 mount $DEV_BOOT $ROOT/boot
-genfstab -p $ROOT > $ROOT/etc/fstab
+genfstab -pU $ROOT > $ROOT/etc/fstab
 cp *.sh $ROOT/root
 
 mount --bind /dev $ROOT/dev
